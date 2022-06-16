@@ -50,6 +50,12 @@ if (specialCharacters) {
 }
 console.log(characters)
 
+var randomPass = "";
+  for (var i = 0; i < passLength; i++) {
+    var someNumber = Math.floor(Math.random() * characters.length)
+    randomPass += characters[someNumber]
+  } return (randomPass)
+
 // Math.floor(Math.random() * (max-min +1) + min);
 }
 
